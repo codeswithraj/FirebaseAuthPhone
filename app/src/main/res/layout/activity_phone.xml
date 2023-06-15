@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity">
+    <com.hbb20.CountryCodePicker
+        android:layout_marginTop="40dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:ccp_defaultNameCode="IND"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_showFlag="true"
+        app:ccp_showNameCode="true"
+        app:ccp_showFullName="true"
+        android:id="@+id/code"/>
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:maxLength="11"
+        android:layout_toRightOf="@+id/code"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/code"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logInBtn"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verifyId"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/logInBtn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verifyBtn"
+        android:text="Verify"
+        android:layout_below="@+id/verifyId"/>
+
+</RelativeLayout>
